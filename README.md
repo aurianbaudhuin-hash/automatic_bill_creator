@@ -23,7 +23,7 @@ automatic_bill_creator/
 │ └── clients_services.csv # Client and service data (see below for example file)
 ├── output/ # Destination folder for the invoices
 ├── resources/
-│ ├── invoice_template.html # HTML template for the invoices
+│ └── invoice_template.html # HTML template for the invoices
 ├── main.py # Script principal pour générer les PDF
 └── output/ # Dossier de sortie pour les PDF générés
 ```
@@ -140,3 +140,13 @@ and outputs invoices like this (it assembles all services supplied to one client
 ![Sample Invoice](resources/invoice_John_Smith.png)
 
 
+## Possible improvements
+This being a very simple demo, a lot of features can be added to better tailor it to the clients needs:
+- Adding a company logo to the invoices
+- Improving the support for long invoices on several pages
+- Adding different client categories and processing their billing differently
+- Connecting script to acounting software or existing services database
+- Adding an user-friendly interface
+- Adding data processing features: finding invalid entries, flagging duplicates,...
+- Reports creation: every time it runs, on top of sending the invoices, it also generates a report on the billings, with custom metrics, presentation-ready
+- ...
