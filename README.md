@@ -24,8 +24,8 @@ automatic_bill_creator/
 ├── output/ # Destination folder for the invoices
 ├── resources/
 │ └── invoice_template.html # HTML template for the invoices
-├── main.py # Script principal pour générer les PDF
-└── output/ # Dossier de sortie pour les PDF générés
+├── main.py # Main script
+└── output/ # Output folder for the invoices
 ```
 
 ## Technologies used
@@ -74,7 +74,7 @@ This demo takes in one **company_data.csv** file of the form
         <td><strong>last invoice number</strong></td>
         <td>0</td>
     </tr>
-
+</table>
 
 and one **clients_services.csv** file of the form
 
@@ -141,7 +141,7 @@ and outputs invoices like this (it assembles all services supplied to one client
 
 
 ## Possible improvements
-This being a very simple demo, a lot of features can be added to better tailor it to the clients needs:
+This being a very simple demo, a lot of features can be added to better tailor it to client needs:
 - Adding a company logo to the invoices
 - Improving the support for long invoices on several pages
 - Adding different client categories and processing their billing differently
