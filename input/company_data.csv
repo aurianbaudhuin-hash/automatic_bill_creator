@@ -1,7 +1,7 @@
-company name,Example LLC;
+company name,Example LLC
 street adress,Main street 1
-Zip code,100001
-City,New York
-Phone,123456789
+zip code,100001
+city,New York
+phone,123456789
 email,company@example.com
-last invoice number,3
+last invoice number,12

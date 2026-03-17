@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Facture - {{ invoice_number }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .company, .client {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .company {
+            width: 50%;
+        }
+
+        .client {
+            width: 45%;
+            text-align: right;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+
+        .total {
+            text-align: right;
+        }
+
+        footer {
+            border-top: 2px solid #333;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="company">
+            <h1>{{ company_name }}</h1>
+            <p>
+                {{ street_address }}<br>
+                {{ zip_code }}, {{ city }}<br>
+                Phone: {{ phone }}<br>
+                Email: {{ email }}
+            </p>
+        </div>
+        <div class="client">
+            <h2>Billed to :</h2>
+            <p>
+                {{ client_name }}<br>
+                {{ client_email }}
+            </p>
+            <p>
+                <strong>Invoice n°:</strong> {{ invoice_number }}
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Hours</th>
+                    <th>Rate</th>
+                    <th>Taxes</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for service in services %}
+                <tr>
+                    <td>{{ service.date }}</td>
+                    <td>{{ service.description }}</td>
+                    <td>{{ service.hours }}h</td>
+                    <td>{{ service.rate }}$/h</td>
+                    <td>{{ service.taxes }}%</td>
+                    <td>{{ service.total }}$</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="total">Total</td>
+                    <td>{{ total_invoice }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        Thank you for trusting us !
+    </footer>
+</body>
+</html>
