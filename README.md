@@ -39,14 +39,39 @@ The workflow is very simple (keep in mind, this is a demo with only basic functi
 
 ## File examples
 This demo takes in one **company_data.csv** file of the form
-|company name       |Example LLC         |
-|-------------------|--------------------|
-|street adress      |Main street, 1      |
-|zip code           |100001              |
-|city               |New York            |
-|phone              |123456789           |
-|email              |company@example.com |
-|last invoice number|0                   |
+<table>
+    <tr>
+        <td><strong>company name</strong></td>
+        <td>Example LLC</td>
+    </tr>
+    <tr>
+        <td><strong>street adress</strong></td>
+        <td>Main street, 1</td>
+    </tr>
+    <tr>
+        <td><strong>zip code</strong></td>
+        <td>100001</td>
+    </tr>
+    <tr>
+        <td><strong>city</strong></td>
+        <td>New York</td>
+    </tr>
+    <tr>
+        <td><strong>company name</strong></td>
+        <td>Example LLC</td>
+    </tr>
+    <tr>
+        <td><strong>phone</strong></td>
+        <td>123456789</td>
+    </tr>
+    <tr>
+        <td><strong>email</strong></td>
+        <td>company@example.com</td>
+    </tr>
+    <tr>
+        <td><strong>last invoice number</strong></td>
+        <td>0</td>
+    </tr>
 
 
 and one **clients_services.csv** file of the form
