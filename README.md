@@ -76,4 +76,65 @@ This demo takes in one **company_data.csv** file of the form
 
 and one **clients_services.csv** file of the form
 
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Client name</th>
+      <th>Email</th>
+      <th>Description</th>
+      <th>Hours</th>
+      <th>Rate</th>
+      <th>Taxes</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01/01/2026</td>
+      <td>John Smith</td>
+      <td>john.smith@examplemail.com</td>
+      <td>Paint job</td>
+      <td>4</td>
+      <td>40</td>
+      <td>21%</td>
+      <td>193.6</td>
+    </tr>
+    <tr>
+      <td>02/01/2026</td>
+      <td>Albert Williams</td>
+      <td>a_will01@examplemail.com</td>
+      <td>Roofing job</td>
+      <td>50</td>
+      <td>35</td>
+      <td>21%</td>
+      <td>2117.5</td>
+    </tr>
+    <tr>
+      <td>03/01/2026</td>
+      <td>John Smith</td>
+      <td>john.smith@examplemail.com</td>
+      <td>Kitchen island placement</td>
+      <td>2</td>
+      <td>40</td>
+      <td>21%</td>
+      <td>96.8</td>
+    </tr>
+    <tr>
+      <td>04/01/2026</td>
+      <td>Emily Watson</td>
+      <td>emily.watson2@examplemail.com</td>
+      <td>Security camera placement</td>
+      <td>4</td>
+      <td>30</td>
+      <td></td>
+      <td>120</td>
+    </tr>
+  </tbody>
+</table>
+
+and outputs invoices like this (it assembles all services supplied to one client on one invoice): 
+
+![Sample Invoice](resources/invoice_John_Smith.png)
+
 
