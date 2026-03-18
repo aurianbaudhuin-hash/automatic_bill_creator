@@ -40,6 +40,18 @@ The workflow is very simple (keep in mind, this is a demo with only basic functi
 2) Run the script
 3) PDFs are automatically sent to clients and stored for your records
 
+## Possible improvements
+This being a very simple demo, a lot of features can be added to better tailor it to client needs:
+- Adding a company logo to the invoices
+- Improving the support for long invoices on several pages
+- Adding different client categories and processing their billing differently
+- Connecting script to acounting software or existing services database
+- Adding an user-friendly interface
+- Adding data processing features: finding invalid entries, flagging duplicates,...
+- Reports creation: every time it runs, on top of sending the invoices, it also generates a report on the billings, with custom metrics, presentation-ready
+- Use of email templates to send out better-looking, personalized emails
+- ...
+
 ## File examples
 This demo takes in one **company_data.csv** file of the form
 <table>
@@ -141,14 +153,4 @@ and outputs invoices like this (it assembles all services supplied to one client
 ![Sample Invoice](resources/invoice_John_Smith.png)
 
 
-## Possible improvements
-This being a very simple demo, a lot of features can be added to better tailor it to client needs:
-- Adding a company logo to the invoices
-- Improving the support for long invoices on several pages
-- Adding different client categories and processing their billing differently
-- Connecting script to acounting software or existing services database
-- Adding an user-friendly interface
-- Adding data processing features: finding invalid entries, flagging duplicates,...
-- Reports creation: every time it runs, on top of sending the invoices, it also generates a report on the billings, with custom metrics, presentation-ready
-- Use of email templates to send out better-looking, personalized emails
-- ...
+
